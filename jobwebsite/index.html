@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href=""><img src="logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">JOBS</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">HIGHRING PARTNER</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Your Dream</h1>
+            <h2>Job is Waiting</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad obcaecati vero<br> cupiditate minima totam
+                tempore at atque temporibus asperiores? Veniam.</p>
+            <a href="" class="hero-btn">Visit Here to know for More</a>
+        </div>
+
+    </section>
+    <!-- ---------------------------------------jobs-------------------------------- -->
+    <section class="jobs">
+        <h1>Jobs We Offer</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem omnis repellendus iusto, minima sit dolore
+            eligendi distinctio consequatur architecto ipsam hic at asperiores ad debitis odio, aliquam, quas eos
+            incidunt.</p>
+        <div class="row">
+            <div class="job-col">
+                <h3>Online Work</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, ab.</p>
+            </div>
+            <div class="job-col">
+                <h3>Office Work</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, ab.</p>
+            </div>
+            <div class="job-col">
+                <h3>Remote Work</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, ab.</p>
+            </div>
+        </div>
+    </section>
+    <!-- ------------------------currnt jobs----------------------------- -->
+
+    <section class="current-job">
+        <p>Categories work waiting for  you</p>
+        <h1>Current <span>Job Posts</span></h1>
+        <a href="" class="hero-btn">Web Development</a>
+        <a href="" class="hero-btn">Graphic Designer</a>
+        <a href="" class="hero-btn">Java Developer</a>
+        <a href="" class="hero-btn">Social media</a>
+        <a href="" class="hero-btn">Project Management</a>
+        <a href="" class="hero-btn">Markiting and Sales</a>
+        <a href="" class="hero-btn">Software Development</a>
+        <a href="" class="hero-btn">FullStack Developer</a>
+    </section>
+
+    <!-- --------------------------our office---------------- -->
+
+    <section class="office">
+        <h1>Our HeadOffice</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nulla velit adipisci quibusdam reprehenderit
+            explicabo placeat officia necessitatibus aspernatur accusamus?</p>
+
+        <div class="row">
+            <div class="office-col">
+                <img src="london.png">
+                <div class="layer">
+                    <h3>BANGULURU</h3>
+                </div>
+            </div>
+            <div class="office-col">
+                <img src="newyork.png">
+                <div class="layer">
+                    <h3>DELHI</h3>
+                </div>
+            </div>
+            <div class="office-col">
+                <img src="washington.png">
+                <div class="layer">
+                    <h3>PUNE</h3>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- --------------------------facilities----------------------- -->
+    <section class="facilities">
+        <h1>our Highring partners</h1>
+    </section>
+
+
+
+
+
+    <!-- ------------------------------scripting for toggle menu------------------------------------ -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function showMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #ededed;
+}
+.drops{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.drop{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: rgb(201, 169, 169);
+    border-radius: 36% 64% 68% 32% / 32% 38% 62% 64%;
+    box-shadow: 19px 10px 10px rgba(0,0,0,.1),15px 25px 20px rgba(0,0,0,.05);
+}
+.drop::before{
+    content: '';
+    position: absolute;
+    top:25px;
+    left: 35px;
+    background: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 36% 64% 68% 32% / 36% 38% 62% 64%; ;
+
+}
+.drop::after{
+    content: '';
+    position: absolute;
+    top: 25px;
+    left: 65px;
+    background: #fff;
+    width: 10px;
+    height: 10px;
+    border-radius: 36% 64%  68% 32% / 36% 38% 62% 64%;
+
+}
+.drop:nth-child(2){
+    transform: scale(.5) translate(300px,300px);
+    border-radius: 36% 64% 68% 32% / 36% 38% 62% 64%;
+}
+.drop:nth-child(3){
+    transform: scale(.5) translate(150px, 186px);
+        border-radius: 36% 64% 68% 32% / 36% 38% 62% 64%;
+
+}
